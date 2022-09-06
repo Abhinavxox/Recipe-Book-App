@@ -1,0 +1,23 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100%;
+}
+
+.main-wrapper {
+    height: 100%;
+}
+
+.top-bar {
+    margin: 3% !important;
+    position: fixed !important;
+    left: 15% !important;
+    right: 15% !important;
+}
+
+.search {
+    width: 100%;
+}
