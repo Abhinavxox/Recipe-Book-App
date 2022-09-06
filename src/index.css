@@ -11,13 +11,18 @@
     height: 100%;
 }
 
-.top-bar {
-    margin: 3% !important;
-    position: fixed !important;
-    left: 15% !important;
-    right: 15% !important;
+.right-label {
+    height: fit-content;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
 }
 
 .search {
     width: 100%;
+    margin-top: 1%;
+}
+
+.content-wrapper {
+    margin: 2% !important;
+
 }
