@@ -26,3 +26,8 @@
     margin: 2% !important;
 
 }
+
+.rcard {
+    display: flex !important;
+    justify-content: center !important;
+}
