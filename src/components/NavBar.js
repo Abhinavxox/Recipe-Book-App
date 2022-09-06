@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className='ui  menu ' style={{ background: 'white', marginBottom: '2px' }}>
             <GiCook size={35} />
             <div className='right menu'>
-                <a rel="noreferrer" class="ui image blue label right-label" href='https://github.com/Abhinavxox' target='_blank'>
-                    <img src={a} />
+                <a rel="noreferrer" className="ui image blue label right-label" href='https://github.com/Abhinavxox' target='_blank'>
+                    <img src={a} alt="img" />
                     GITHUB
                 </a>
             </div>

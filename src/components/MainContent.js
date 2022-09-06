@@ -1,27 +1,18 @@
 import React from 'react';
 import '../index.css'
 
-const MainContent = () => {
+const MainContent = (props) => {
+    console.log(props)
+    const recipes = props.results.map((id) => {
+        return (
+            <div className="ui small image">
+                <img alt="hi" src={id.recipe.image} />
+            </div>
+        )
+    })
     return (
         <div className="ui two column stackable grid  content-wrapper">
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
-            <div className="column">
-                <div className="ui segment">Content</div>
-            </div>
+            {recipes}
         </div>
     )
 }
