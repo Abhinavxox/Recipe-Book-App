@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={FirstPage} />
-          <Route path='/:recipe' component={Recipe} />
+          <Route path='/recipe/:recipe' component={Recipe} />
         </Switch>
       </div>
     </BrowserRouter>

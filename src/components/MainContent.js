@@ -8,20 +8,20 @@ const MainContent = (props) => {
             <div className='column rcard'>
                 <div className="ui card">
                     <Link className="image" to={{
-                        pathname: ` ${id.recipe.label}`,
+                        pathname: `/recipe/${id.recipe.label}`,
                         state: id
                     }} >
                         <img src={id.recipe.image} alt="hi" />
                     </Link>
                     <div className="content">
                         <Link className="header" to={{
-                            pathname: ` ${id.recipe.label}`,
+                            pathname: `/recipe/${id.recipe.label}`,
                             state: id
                         }} >{id.recipe.label}</Link>
 
                         <div className="meta">
                             <Link to={{
-                                pathname: ` ${id.recipe.label}`,
+                                pathname: `/recipe/${id.recipe.label}`,
                                 state: id
                             }} >Cuisine : {id.recipe.cuisineType}</Link>
                         </div>
