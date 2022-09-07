@@ -31,3 +31,11 @@
     display: flex !important;
     justify-content: center !important;
 }
+
+.left-image {
+    margin: 0 !important;
+}
+
+.lbl {
+    margin: 1% !important;
+}

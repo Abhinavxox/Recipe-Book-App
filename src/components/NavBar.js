@@ -6,7 +6,7 @@ import a from '../images/a.jpg'
 const Navbar = () => {
 
     return (
-        <div className='ui  menu ' style={{ background: 'white', marginBottom: '2px' }}>
+        <div className='ui  menu nav'>
             <GiCook size={35} />
             <div className='right menu'>
                 <a rel="noreferrer" className="ui image blue label right-label" href='https://github.com/Abhinavxox' target='_blank'>

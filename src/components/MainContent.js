@@ -1,19 +1,29 @@
 import React from 'react';
 import '../index.css'
+import { Link } from 'react-router-dom';
 
 const MainContent = (props) => {
-    console.log(props)
     const recipes = props.results.map((id) => {
         return (
             <div className='column rcard'>
                 <div className="ui card">
-                    <a className="image" href="#">
-                        <img src={id.recipe.image} />
-                    </a>
+                    <Link className="image" to={{
+                        pathname: ` ${id.recipe.label}`,
+                        state: id
+                    }} >
+                        <img src={id.recipe.image} alt="hi" />
+                    </Link>
                     <div className="content">
-                        <a className="header" href="#">{id.recipe.label}</a>
+                        <Link className="header" to={{
+                            pathname: ` ${id.recipe.label}`,
+                            state: id
+                        }} >{id.recipe.label}</Link>
+
                         <div className="meta">
-                            <a>Cuisine : {id.recipe.cuisineType}</a>
+                            <Link to={{
+                                pathname: ` ${id.recipe.label}`,
+                                state: id
+                            }} >Cuisine : {id.recipe.cuisineType}</Link>
                         </div>
                     </div>
                 </div>
