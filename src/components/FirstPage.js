@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../index.css'
 import axios from 'axios';
 import SearchBar from './SearchBar'
@@ -6,16 +6,18 @@ import MainContent from './MainContent';
 
 const FirstPage = () => {
 
-    const APP_ID = "b2285fe5"
-    const APP_KEY = "c330812678cabb3efe32443a29deb695"
     const [results, setResults] = useState({ search: {} });
 
     const onSubmit = async (q) => {
-        const requestURL = `https://api.edamam.com/api/recipes/v2?type=public&q=${q}&app_id=${APP_ID}&app_key=${APP_KEY}`
+        const requestURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${q}`
         const response = await axios.get(requestURL)
-        setResults({ search: response.data.hits })
-        console.log(response.data.hits)
+        setResults({ search: response.data.meals })
+        console.log(response.data.meals)
     }
+
+    useEffect(() => {
+        onSubmit("")
+    }, []);
 
     let conditional;
     if (Object.keys(results.search).length === 0) {
