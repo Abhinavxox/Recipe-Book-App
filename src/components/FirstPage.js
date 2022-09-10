@@ -11,8 +11,9 @@ const FirstPage = () => {
     const onSubmit = async (q) => {
         const requestURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${q}`
         const response = await axios.get(requestURL)
-        setResults({ search: response.data.meals })
-        console.log(response.data.meals)
+        if (response.data.meals != null) {
+            setResults({ search: response.data.meals })
+        }
     }
 
     useEffect(() => {
