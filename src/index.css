@@ -39,3 +39,7 @@
 .lbl {
     margin: 1% !important;
 }
+
+.hidden {
+    display: none !important;
+}

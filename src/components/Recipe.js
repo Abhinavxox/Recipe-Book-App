@@ -14,16 +14,17 @@ const Recipe = (props) => {
     return (
         <div>
             <div className="ui stackable grid very padded">
-                <div className="left floated six wide column left-image">
+                <div className="left floated ten wide column left-image">
                     <div className="ui segment" >
                         <img src={id.strMealThumb} alt="hi" width='100%' />
                     </div>
-                </div>
-                <div className="right floated ten wide column">
                     <div className="ui segment">
                         <ShortDescp id={id} />
 
                     </div>
+                </div>
+                <div className="right floated six wide column">
+
                     <Ingredients id={id} />
                 </div>
             </div>
