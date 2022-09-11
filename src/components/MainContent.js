@@ -8,7 +8,6 @@ const MainContent = (props) => {
     //         <div>NO RESULTS FOUND</div>
     //     )
     // }
-    console.log(props)
     const recipes = props.results.map((id) => {
         return (
             <div className='column rcard'>
