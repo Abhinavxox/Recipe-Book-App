@@ -5,6 +5,7 @@ import '../index.css'
 
 const Recipe = (props) => {
     const id = props.history.location.state
+    console.log(id)
     if (id === undefined) {
         return (
             <div>404 ERROR</div>
