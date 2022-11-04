@@ -20,6 +20,8 @@ const FirstPage = () => {
         onSubmit("")
     }, []);
 
+
+
     let conditional;
     if (Object.keys(results.search).length === 0) {
         conditional =
